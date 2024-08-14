@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote Seu Idoso</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Cor de fundo azul claro */
+            color: #333;
+            transition: background-color 0.3s;
+        }
+        header {
+            background-color: #00acc1; /* Cor de fundo azul escuro */
+            color: #fff;
+            padding: 3em 0;
+            text-align: center;
+            background-image: url('header-bg.jpg'); /* Imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3em; /* Tamanho maior para o título principal */
+            margin: 0;
+            color: #000; /* Cor do título em preto */
+        }
+        header p {
+            font-size: 1.5em; /* Tamanho da frase */
+            color: #fff;
+            margin-top: 0.5em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section {
+            background: #fff;
+            padding: 2em;
+            margin-bottom: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.2);
+            transition: box-shadow 0.3s;
+        }
+        .section:hover {
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+        h1, h2 {
+            color: #000; /* Cor dos títulos em preto */
+            transition: color 0.3s;
+        }
+        h1:hover, h2:hover {
+            color: #004d40; /* Cor de destaque ao passar o mouse */
+        }
+        footer {
+            text-align: center;
+            padding: 2em;
+            background-color: #00acc1; /* Cor de fundo azul escuro */
+            color: white;
+            position: relative;
+        }
+        .footer-social {
+            margin-top: 1em;
+        }
+        .footer-social a {
+            color: white;
+            font-size: 1.5em;
+            margin: 0 0.5em;
+            transition: color 0.3s;
+        }
+        .footer-social a:hover {
+            color: #004d40; /* Cor de destaque ao passar o mouse sobre ícones */
+        }
+        <img 
+ {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1em;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        img:hover {
+            transform: scale(1.05); /* Efeito de zoom nas imagens ao passar o mouse */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .gallery {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+        .gallery .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .gallery .carousel img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-right: 1em;
+        }
+        .gallery .button {
+            background-color: #00acc1; /* Cor do botão */
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: background-color 0.3s;
+        }
+        .gallery .button:hover {
+            background-color: #00796b; /* Cor do botão ao passar o mouse */
+        }
+        .gallery .prev {
+            left: 0;
+        }
+        .gallery .next {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Adote Seu Idoso</h1>
+            <p>Faça a diferença na vida de um idoso apadrinhando-o e presenteando-o com carinho.</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Seção de Informações -->
+        <div class="section">
+            <h2>Sobre o Projeto</h2>
+            <p>Este site foi criado especialmente para os moradores do asilo, com o objetivo de promover conexões, amizades e momentos especiais. Aqui, você encontrará um espaço acolhedor onde pode se conectar com outros idosos, voluntários e suas famílias. Sinta-se à vontade para explorar e participar. Juntos, vamos construir uma comunidade cheia de carinho e companheirismo.</p>
+            
+            <h2>Como Funciona</h2>
+            <p>Você pode escolher um idoso para apadrinhar com base nas informações disponíveis. O processo envolve:</p>
+            <ul>
+                <li>Escolher um idoso com base nas informações fornecidas.</li>
+                <li>Envolver-se com o idoso, oferecendo apoio emocional e social.</li>
+                <li>Comprar presentes que correspondam aos desejos e necessidades do idoso.</li>
+            </ul>
+
+            <h2>Sobre o asilo</h2>
+            <p>Desde 2012 o então Hospital Municipal de Capelinha passou a ser gerido pela FHSVP – Fundação Hospitalar São Vicente de Paulo, entidade filantrópica com reconhecimento municipal, estadual e federal de direito privado sem fins lucrativos.A Fundação foi criada pela Lei 1.668/2011 de 13/07/2011 após consulta publica junto à população Capelinhense sendo sua criação motivada por questões legais para possibilitar atendimento a particulares e conveniados.Mesmo possibilitando atendimentos particulares e conveniados a Fundação Hospitalar atende 90% do seu atendimento pelo Sistema Único de Saúde – SUS.O Hospital possui 56 (cinquenta e seis) leitos, com atendimento ás clínicas básicas como médica, cirúrgica, obstétrica, pediátrica, ortopédica e cardiológica de menor complexidade.</p>
+        </div>
+
+        <!-- Seção de Galeria de Fotos -->
+        <div class="section">
+            <h2>Galeria de Fotos</h2>
+            <p></p>
+            <div class="gallery">
+                <div class="carousel">
+                    <img src="idosos.jpg" alt="descriçao">
+                    <img src="idososs.jpg" alt="descriçao">
+                    <img src="idososk.jpg" alt="descriçao">
+                    <img src="idososj.jpg" alt="descriçao">
+                </div>
+                <button class="button prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="button next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Seção de Contato -->
+        <div class="section">
+            <h2>Contato</h2>
+            <p>Para mais informações sobre como participar do projeto ou para esclarecer dúvidas, entre em contato conosco:</p>
+            <p>Email: <a href="priscilafernandesoares1102@gmail.com">priscilafernandessoares1102@gmail.com</a></p>
+            <p>Telefone: (33) 991236596</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Adote Seu Idoso. Todos os direitos reservados.</p>
+        <div class="footer-social">
+            <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+            <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+
+        function moveSlide(step) {
+            const slides = document.querySelectorAll('.gallery .carousel img');
+            slideIndex = (slideIndex + step + slides.length) % slides.length;
+            const offset = -slideIndex * 100;
+            document.querySelector('.gallery .carousel').style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+
+</body>
+</html>
