@@ -7,65 +7,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e0f7fa; /* Cor de fundo azul claro */
+            background-color: #f0f8ff;
             color: #333;
-            transition: background-color 0.3s;
         }
         header {
-            background-color: #00acc1; /* Cor de fundo azul escuro */
+            background-color: #00796b;
             color: #fff;
-            padding: 3em 0;
+            padding: 4em 0;
             text-align: center;
-            background-image: url('header-bg.jpg'); /* Imagem de fundo */
+            background-image: url('header-bg.jpg');
             background-size: cover;
             background-position: center;
-            position: relative;
         }
         header h1 {
-            font-size: 3em; /* Tamanho maior para o título principal */
+            font-size: 3em;
             margin: 0;
-            color: #000; /* Cor do título em preto */
+            color: #fff;
         }
         header p {
-            font-size: 1.5em; /* Tamanho da frase */
-            color: #fff;
+            font-size: 1.5em;
             margin-top: 0.5em;
+            color: #e0f7fa;
+        }
+        nav {
+            background-color: #004d40;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .container {
-            width: 80%;
+            width: 85%;
             margin: auto;
-            overflow: hidden;
+            padding: 2em 0;
         }
         .section {
             background: #fff;
             padding: 2em;
-            margin-bottom: 1.5em;
+            margin-bottom: 2em;
             border-radius: 8px;
-            box-shadow: 0 0 12px rgba(0,0,0,0.2);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             transition: box-shadow 0.3s;
         }
         .section:hover {
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
         }
-        h1, h2 {
-            color: #000; /* Cor dos títulos em preto */
-            transition: color 0.3s;
-        }
-        h1:hover, h2:hover {
-            color: #004d40; /* Cor de destaque ao passar o mouse */
+        h2 {
+            color: #00796b;
+            border-bottom: 2px solid #e0f7fa;
+            padding-bottom: 0.5em;
         }
         footer {
             text-align: center;
-            padding: 2em;
-            background-color: #00acc1; /* Cor de fundo azul escuro */
+            padding: 2em 0;
+            background-color: #004d40;
             color: white;
-            position: relative;
-        }
-        .footer-social {
-            margin-top: 1em;
         }
         .footer-social a {
             color: white;
@@ -74,10 +80,9 @@
             transition: color 0.3s;
         }
         .footer-social a:hover {
-            color: #004d40; /* Cor de destaque ao passar o mouse sobre ícones */
+            color: #00acc1;
         }
-        <img 
- {
+        img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
@@ -85,7 +90,7 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
         img:hover {
-            transform: scale(1.05); /* Efeito de zoom nas imagens ao passar o mouse */
+            transform: scale(1.05);
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         .gallery {
@@ -105,7 +110,7 @@
             margin-right: 1em;
         }
         .gallery .button {
-            background-color: #00acc1; /* Cor do botão */
+            background-color: #00796b;
             color: white;
             border: none;
             padding: 0.5em 1em;
@@ -117,7 +122,7 @@
             transition: background-color 0.3s;
         }
         .gallery .button:hover {
-            background-color: #00796b; /* Cor do botão ao passar o mouse */
+            background-color: #004d40;
         }
         .gallery .prev {
             left: 0;
@@ -125,24 +130,42 @@
         .gallery .next {
             right: 0;
         }
+        .contact-info {
+            margin: 2em 0;
+        }
+        .contact-info a {
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="container">
-            <h1>Adote um Idoso</h1>
-            <p>Faça a diferença na vida de um idoso apadrinhando-o e presenteando-o com carinho.</p>
-        </div>
+        <h1>Adote um Idoso</h1>
+        <p>Faça a diferença na vida de um idoso apadrinhando-o e presenteando-o com carinho.</p>
     </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#galeria">Galeria de Fotos</a>
+        <a href="#contato">Contato</a>
+    </nav>
 
     <div class="container">
 
         <!-- Seção de Informações -->
-        <div class="section">
+        <div id="sobre" class="section">
             <h2>Sobre o Projeto</h2>
             <p>Este site foi criado especialmente para os moradores do asilo, com o objetivo de promover conexões, amizades e momentos especiais. Aqui, você encontrará um espaço acolhedor onde pode se conectar com outros idosos, voluntários e suas famílias. Sinta-se à vontade para explorar e participar. Juntos, vamos construir uma comunidade cheia de carinho e companheirismo.</p>
-            
+        </div>
+
+        <div id="como-funciona" class="section">
             <h2>Como Funciona</h2>
             <p>Você pode escolher um idoso para apadrinhar com base nas informações disponíveis. O processo envolve:</p>
             <ul>
@@ -150,21 +173,23 @@
                 <li>Envolver-se com o idoso, oferecendo apoio emocional e social.</li>
                 <li>Comprar presentes que correspondam aos desejos e necessidades do idoso.</li>
             </ul>
+        </div>
 
-            <h2>Sobre o asilo</h2>
-            <p>Desde 2012 o então Hospital Municipal de Capelinha passou a ser gerido pela FHSVP – Fundação Hospitalar São Vicente de Paulo, entidade filantrópica com reconhecimento municipal, estadual e federal de direito privado sem fins lucrativos.A Fundação foi criada pela Lei 1.668/2011 de 13/07/2011 após consulta publica junto à população Capelinhense sendo sua criação motivada por questões legais para possibilitar atendimento a particulares e conveniados.Mesmo possibilitando atendimentos particulares e conveniados a Fundação Hospitalar atende 90% do seu atendimento pelo Sistema Único de Saúde – SUS.O Hospital possui 56 (cinquenta e seis) leitos, com atendimento ás clínicas básicas como médica, cirúrgica, obstétrica, pediátrica, ortopédica e cardiológica de menor complexidade.</p>
+        <div class="section">
+            <h2>Sobre o Asilo</h2>
+            <p>Desde 2012 o então Hospital Municipal de Capelinha passou a ser gerido pela FHSVP – Fundação Hospitalar São Vicente de Paulo, entidade filantrópica com reconhecimento municipal, estadual e federal de direito privado sem fins lucrativos. A Fundação foi criada pela Lei 1.668/2011 de 13/07/2011 após consulta pública junto à população Capelinhense. Mesmo possibilitando atendimentos particulares e conveniados, a Fundação Hospitalar atende 90% do seu atendimento pelo Sistema Único de Saúde – SUS.</p>
+            <p>O Hospital possui 56 leitos, com atendimento às clínicas básicas como médica, cirúrgica, obstétrica, pediátrica, ortopédica e cardiológica de menor complexidade.</p>
         </div>
 
         <!-- Seção de Galeria de Fotos -->
-        <div class="section">
+        <div id="galeria" class="section">
             <h2>Galeria de Fotos</h2>
-            <p></p>
             <div class="gallery">
                 <div class="carousel">
-                    <img src="idosos.jpg" alt="descriçao">
-                    <img src="idososs.jpg" alt="descriçao">
-                    <img src="idososk.jpg" alt="descriçao">
-                    <img src="idososj.jpg" alt="descriçao">
+                    <img src="idosos.jpg" alt="Imagem de idosos">
+                    <img src="idososs.jpg" alt="Imagem de idosos">
+                    <img src="idososk.jpg" alt="Imagem de idosos">
+                    <img src="idososj.jpg" alt="Imagem de idosos">
                 </div>
                 <button class="button prev" onclick="moveSlide(-1)">&#10094;</button>
                 <button class="button next" onclick="moveSlide(1)">&#10095;</button>
@@ -172,17 +197,19 @@
         </div>
 
         <!-- Seção de Contato -->
-        <div class="section">
+        <div id="contato" class="section">
             <h2>Contato</h2>
-            <p>Para mais informações sobre como participar do projeto ou para esclarecer dúvidas, entre em contato conosco:</p>
-            <p>Email: <a href="priscilafernandesoares1102@gmail.com">priscilafernandessoares1102@gmail.com</a></p>
-            <p>Telefone: (33) 991236596</p>
+            <div class="contact-info">
+                <p>Para mais informações sobre como participar do projeto ou para esclarecer dúvidas, entre em contato conosco:</p>
+                <p>Email: <a href="mailto:priscilafernandessoares1102@gmail.com">priscilafernandessoares1102@gmail.com</a></p>
+                <p>Telefone: (33) 99123-6596</p>
+            </div>
         </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2024 Adote Seu Idoso. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Adote um Idoso. Todos os direitos reservados.</p>
         <div class="footer-social">
             <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
             <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
